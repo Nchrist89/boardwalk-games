@@ -1,0 +1,11 @@
+h1 {
+    font-family: 'Macondo', cursive; /* custom google font */
+}
+
+body {
+    font-family: 'inter', sans-serif; /* custom google font */
+}
+
+.fa-brands {
+    font-size: 35px; /* Font awesome icons */ 
+}
