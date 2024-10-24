@@ -102,6 +102,17 @@ h2 {
 
 }
 
+#event-table {
+    display: flex;
+    justify-content: center;
+}
+
+#events .btn {
+    border-radius: 0;
+}
+
+
+
 /* Footer / contact */
 
 #contact {
@@ -151,6 +162,14 @@ h2 {
 */
 
 /* Media queries */
+
+/* Small devices (mobile phones, 320px and up) */
+@media screen and (min-width: 320px) {
+    /*#events .btn {
+    margin: auto;*/
+} 
+    
+
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
