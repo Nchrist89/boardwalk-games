@@ -83,3 +83,36 @@ h2 {
 }
 */
 
+/* Media queries */
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    /* Make all services cards  the same height for consistency */
+    #services .card-body {
+        min-height: 191px;
+    }
+}
+
+/* Large devices (small laptops, 992px and up) */
+@media screen and (min-width: 992px) {
+    /* Make all services cards  the same height for consistency */
+    #services .card-body {
+        min-height: auto;
+    }
+}
+
+/* XL devices (Large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    /* Make all services cards  the same height for consistency */
+    #services .card-body {
+        min-height: 220px;
+    }
+}
+
+/* XXL devices (Larger desktops, 1400px and up) */
+@media screen and (min-width: 1400px) {
+    /* Make all services cards  the same height for consistency */
+    #services .card-body {
+        min-height: 195px;
+    }
+}
