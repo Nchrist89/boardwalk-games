@@ -193,9 +193,6 @@ h2 {
         min-height: 220px;
     }
 
-    #event-button {
-        align-self: center;
-    }
 }
 
 /* XXL devices (Larger desktops, 1400px and up) */
