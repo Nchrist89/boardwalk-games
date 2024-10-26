@@ -102,16 +102,16 @@ h2 {
 
 }
 
-#event-table {
-    display: flex;
-    justify-content: center;
-}
+/* Events section */
 
-#events .btn {
+#events .custom-button-filled {
     border-radius: 0;
 }
 
-
+#event-button {
+    margin-top: 25px;
+    text-align: center;
+}
 
 /* Footer / contact */
 
@@ -163,13 +163,12 @@ h2 {
 
 /* Media queries */
 
-/* Small devices (mobile phones, 320px and up) */
-@media screen and (min-width: 320px) {
-    /*#events .btn {
-    margin: auto;*/
+/* Extra small devices (mobile phones, 320px and up) */
+@media screen and (max-width: 400px) {
+    #event-table {
+        font-size: 12px;
+    }
 } 
-    
-
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
@@ -192,6 +191,10 @@ h2 {
     /* Make all services cards  the same height for consistency */
     #services .card-body {
         min-height: 220px;
+    }
+
+    #event-button {
+        align-self: center;
     }
 }
 
