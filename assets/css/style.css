@@ -112,6 +112,13 @@ h2 {
     text-align: center;
 }
 
+/* Reservation section */
+
+#button-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
 /* Footer / contact */
 
 #contact {
@@ -190,6 +197,11 @@ h2 {
     /* Make all services cards  the same height for consistency */
     #services .card-body {
         min-height: 220px;
+    }
+
+    #reservation-form {
+        display: flex;
+        flex-wrap: wrap;
     }
 
 }
