@@ -225,13 +225,14 @@
         <!-- Reservation form -->
         <section>
             <div id="reservation-form" class="container col-12 col-lg-10 col-xl-8 mr-3 ml-3">
-                <form action="success.html"a method="GET">
+                <form action="success.html" a method="GET">
                     <div class="row justify-content-center">
                         <div class="mt-3 col-12 col-xs-12 col-md-8 col-lg-10 col-xl-12">
                             <div>
                                 <h2 class="display-6 text-center">Reserve a game</h2>
                             </div>
-                            <p class="col-md-12">Reserve a board game for your next visit to Boardwalk Games. Pick your challenge, and
+                            <p class="col-md-12">Reserve a board game for your next visit to Boardwalk Games. Pick your
+                                challenge, and
                                 let the
                                 adventure begin! Fill out your details and preferred game below, and we'll have it
                                 set aside for
@@ -359,6 +360,27 @@
         crossorigin="anonymous"></script>
     <!-- Font awesome kit -->
     <script src="https://kit.fontawesome.com/079554a7fb.js" crossorigin="anonymous"></script>
+    <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
+    <script>
+        document
+            .querySelectorAll(".navbar-collapse .nav-link")
+            .forEach((link) => {
+                link.addEventListener("click", function (e) {
+                    let section = document.querySelector(e.target.getAttribute("href"));
+                    if (section) {
+                        e.preventDefault(); // Prevent default anchor click behavior
+                        let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
+                        window.scroll({
+                            top: section.offsetTop - navbarHeight, // Adjust for navbar height
+                            behavior: "smooth",
+                        });
+                        document
+                            .querySelector(".navbar-collapse")
+                            .classList.remove("show"); // Collapse navbar
+                    }
+                });
+            });
+    </script>
 
 </body>
 
