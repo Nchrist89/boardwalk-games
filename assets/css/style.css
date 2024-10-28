@@ -93,6 +93,13 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+/* Testimonials section */
+
+#testimonial {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /* Game library cards */
 
 #new-games .card,
@@ -121,6 +128,10 @@ h2 {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+}
+
+.card-body footer {
+    margin-top: 15px;
 }
 
 /* Footer / contact */
@@ -176,6 +187,10 @@ h2 {
     #services .card-body {
         min-height: 191px;
     }
+
+    #testimonial .card-body {
+        min-height: 284px;
+    }
 }
 
 /* Large devices (small laptops, 992px and up) */
@@ -183,6 +198,10 @@ h2 {
     /* Make all services cards  the same height for consistency */
     #services .card-body {
         min-height: auto;
+    }
+
+    #testimonial .card-body {
+        min-height: 210px;
     }
 }
 
@@ -208,5 +227,9 @@ h2 {
     /* Make all services cards  the same height for consistency */
     #services .card-body {
         min-height: 195px;
+    }
+
+    #testimonial .card-body {
+        min-height: 314.25px;
     }
 }
