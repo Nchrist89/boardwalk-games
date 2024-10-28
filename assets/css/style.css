@@ -136,6 +136,16 @@ h2 {
 
 /* Footer / contact */
 
+#sign-up {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+footer .custom-button-outline {
+    color: white;
+}
+
 #contact {
     background-color: var(--primary-color);
     color: white;
